@@ -33,7 +33,7 @@
 }
 .headings{
     margin: 0.5em;
-    font-family: cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:bold;
     text-shadow: 0 5px 1px rgba(0, 0, 0, 0.721);
 }
@@ -60,7 +60,7 @@ body{
 
 ul li{
     text-shadow: 0 5px 1px rgba(0, 0, 0, 0.721);
-    font-family:cursive;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(255, 255, 255);
     font-size: 1.2em;
     font-weight: bold;
