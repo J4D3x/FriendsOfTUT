@@ -1,0 +1,148 @@
+
+
+
+#timer{
+    margin-bottom: 1em;
+    border-radius: 8px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.896);
+    padding: 0.1em;
+    background-color: rgba(0, 0, 0, 0.055);
+}
+#foft{
+    text-align: center;
+}
+#_bodyy{
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 8px;
+    box-shadow: 0 0 0 black;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    backdrop-filter: blur(0.2em);
+}
+#_bodyy2{
+
+    font-size: 1.3em;
+    border-radius: 8px;
+    box-shadow: 0 0 0 black;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    backdrop-filter: blur(0.2em);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.headings{
+    margin: 0.5em;
+    font-family: cursive;
+    font-weight:bold;
+    text-shadow: 0 5px 1px rgba(0, 0, 0, 0.721);
+}
+
+#navBar{
+    z-index: 9999 !important;
+    position:sticky;
+    top: 0;
+    backdrop-filter: blur(0.5em);
+    display: flex;
+    justify-content: center;
+    
+}
+body{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgb(250, 41, 41),rgb(0, 0, 0));
+    color: white;
+    background-image:linear-gradient(rgba(0, 0, 0, 0)), url(images/freshback.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+ul li{
+    text-shadow: 0 5px 1px rgba(0, 0, 0, 0.721);
+    font-family:cursive;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+    float: left;
+    margin-right: 1em ;
+    list-style: none;
+    transition: font-size 0.05s ease-in-out;
+}
+
+
+
+li:hover{
+    font-size: 1.1em;
+    color: rgb(255, 159, 43);
+}
+
+#mapp{
+    display: inline-block;
+    
+}
+
+#timerHeading{
+
+    animation-name: animaOne;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+#timerHeading2{
+
+    animation-name: animaTwo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes animaOne {
+    0%{font-size: 1em;}
+    30%{font-size: 1.1em; color: rgb(255, 109, 18);}
+    70%{font-size: 1.1em; color: rgb(255, 137, 91);}
+    100%{font-size: 1em;}
+    
+}
+@keyframes animaTwo {
+    0%{font-size: 1em;}
+    30%{font-size: 1.1em; color: rgb(33, 116, 20);}
+    70%{font-size: 1.1em; color: rgb(33, 116, 20);}
+    100%{font-size: 1em;}
+    
+}
+
+#mainPage{
+    
+}
+
+/* Layout for the two content boxes with ids "_bodyy" and "_bodyy2".
+   When the viewport is wider than 500px they appear side-by-side. On
+   small screens they stack. Using IDs here matches the existing markup;
+   if you prefer classes (recommended) we can change this easily. */
+
+@media (min-width: 501px) {
+    #_bodyy {
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        margin: 0 0;
+        box-sizing: border-box;
+        background-color: white;
+    }
+    #timer{
+        color: black;
+    }
+}
+
+@media (max-width: 500px) {
+    #_bodyy{
+        display: block;
+        width: 100%;
+        margin: 0 0 1em 0;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.537);
+        
+
+    }
+}
