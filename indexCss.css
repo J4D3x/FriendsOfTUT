@@ -10,6 +10,7 @@
     background-color: rgba(0, 0, 0, 0.055);
 }
 #foft{
+    display:none;
     text-align: center;
 }
 #_bodyy{
@@ -146,3 +147,4 @@ li:hover{
 
     }
 }
+
