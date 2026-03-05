@@ -10,9 +10,9 @@
 let countdownIntervals = {};
 
 function getDefaultTarget() {
-	// Default target: Saturday, 07 March 2026 at 00:00:00
-	// (explicit fixed date requested by user)
-	return new Date('2026-03-07T00:00:00');
+	// Default target: Saturday, 14 March 2026 at 00:00:00
+	// (updated per user's request)
+	return new Date('2026-03-14T00:00:00');
 }
 
 function formatTimePart(n) {
@@ -105,15 +105,18 @@ let contactIcon = document.getElementById('contactIcon');
 
     document.getElementById('infoPage').hidden = true;
     document.getElementById('contactPage').hidden = true;
-
+    
 
 function updateOnOff1(){
+    document.body.style.backgroundImage="linear-gradient(rgba(0, 0, 0, 0.49)), url(images/background1.jpg)";
     document.getElementById('mainPage').hidden = false;
     document.getElementById('infoPage').hidden = true;
     document.getElementById('contactPage').hidden = true;
 
 }
 function updateOnOff2(){
+    document.body.style.backgroundImage="none";
+    document.body.style.backgroundColor="black";
     document.getElementById('mainPage').hidden = true;
     document.getElementById('infoPage').hidden = false;
 
