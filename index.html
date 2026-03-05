@@ -18,7 +18,8 @@
                 <ul>
                     <li onclick="updateOnOff1()" id="homeIcon"><i class="fa-sharp fa-solid fa-house"></i><br></li>
                     <li onclick="updateOnOff2()" id="infoIcon"><i class="fa-solid fa-info"></i><br></li>
-                    <li  id="contactIcon"><i class="fa-solid fa-phone"></i><br></li>
+                    <li onclick="updateOnOff4()" id="photoIcon"><i class="fa-solid fa-photo-film"></i></li>
+                    <li onclick="updateOnOff3()" id="contactIcon"><i class="fa-solid fa-phone"></i><br></li>
                 </ul>
             </nav>
             
@@ -29,7 +30,7 @@
                 <!--ABOUT-->
             <div id="newS24" style="background-color: rgba(255, 255, 255, 0.937); text-align: left; padding: 0.4em; border-radius: 0 0 10px 10px;">
                 
-                <img id="introText" src="images/introduction2.PNG"  style="margin: 0.5em;" >
+                <img onclick="updateOnOff4()" id="introText" src="images/BADGEon2.PNG"  style="margin: 0.5em;" >
                 <h2 style="color: rgba(0, 0, 0, 0.562); text-align: left; margin:0.6em;"></h2>
                 
 
@@ -122,8 +123,8 @@
                     <h2>MORE INFO</h2>
                     <div id="details2" style="background-color: rgba(156, 213, 178, 0); padding: 1em; color: rgb(255, 255, 255); background-image: linear-gradient(rgba(0, 0, 0, 0),black),url(images/background1.jpg); background-attachment: fixed; background-size: contain;" >
                         <div id="rules">
-                        <h3 style="text-align: center;margin:0.5em;">Rules</h3>
-                        <p style="background-color: black; padding: 1em; text-align: left;border-radius: 10px;">
+                        <h3 style="text-align: center;margin:0.5em;">RULES & GUIDELINES</h3>
+                        <p style="background-color: black; padding: 1em; text-align: left;border-radius: 10px; height: 300px; overflow: auto;">
                             Event Rules & Guidelines
                         To ensure a safe, enjoyable, and well-organized experience for everyone attending the Friends of TUT Freshers, all guests are required to comply with the following rules and guidelines:
                         <br>
@@ -191,7 +192,61 @@
                         <br></p>
                         </div>
                     </div>
+                    <h1>DIRECTIONS</h1>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14358.103994575784!2d29.26015571597017!3d-25.885073632935764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeaf3c17ab96eb3%3A0x8a6c5a63ae225212!2sTakealot%20Pickup%20Point%20Emalahleni!5e0!3m2!1sen!2sza!4v1772720185831!5m2!1sen!2sza" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="details3" style="background-color: rgba(156, 213, 178, 0); padding: 1em; color: rgb(255, 255, 255); background-image: linear-gradient(rgba(0, 0, 0, 0),black),url(images/background1.jpg); background-attachment: fixed; background-size: contain;" >
+                    </div>
                 </div>
+             </div>
+
+             <!--editor page-->
+             
+
+
+        <div id="editorPage">
+            <div id="body3">
+            <div class="container">
+
+        <img src="images/BADGEon1.PNG" alt="what type of fresher are you" width="220px">
+        <h2>Upload Image</h2>
+
+        <input type="file" id="upload" accept="image/* " placeholder="upload image">
+        
+        <br>
+
+        <!-- Overlay choice radios -->
+        <fieldset style="margin-top:0.8em; text-align:left; display:inline-block;">
+            <legend>Choose a badge overlay</legend>
+            <label><input type="radio" name="overlayChoice" value="groovist" checked> the groovist</label><br>
+            <label><input type="radio" name="overlayChoice" value="rizzler"> the rizzler</label><br>
+            <label><input type="radio" name="overlayChoice" value="beautyqueen"> the beauty queen</label><br>
+            <label><input type="radio" name="overlayChoice" value="partystarter"> the party starter</label><br>
+            <label><input type="radio" name="overlayChoice" value="contentcreator"> the content creator</label><br>
+            <label><input type="radio" name="overlayChoice" value="aurafarmer"> the aura farmer</label>
+        </fieldset>
+
+        <canvas id="canvas" width="300px" height="300px"></canvas>
+
+        <br>
+
+        <button id="download"><i class="fa-solid fa-download"></i><br>download</button>
+
+        </div>
+
+        </div>
+
+        </div>
+        
+        
+
+
+
+             <!--contactPage-->
+             <div id="contactPage">
+                <div id="_bodyy">
+                    <h1>ContactPage</h1>
+                </div>
+
              </div>
             
             
