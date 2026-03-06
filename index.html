@@ -5,12 +5,11 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>friendsOfTut</title>
             <link rel="stylesheet" href="indexCss.css">
-        </head>
-        <script src="https://kit.fontawesome.com/ba5d6375af.js" crossorigin="anonymous"></script>
+    </head>
 
         <body>
             <div id="foft">
-                <img src="images/fOtut_logo.PNG" width="200px">
+                <img src="images/fOtut_logo.PNG" width="200px" alt="Friends of TUT logo">
                  
             </div>
             <nav id="navBar">
@@ -28,9 +27,9 @@
             <!--m//////////////////////////////////////////-->
             <div id="mainPage">
                 <!--ABOUT-->
-            <div id="newS24" style="background-color: rgba(255, 255, 255, 0.937); text-align: left; padding: 0.4em; border-radius: 0 0 10px 10px;">
+            <div id="newS24" style="background-color: rgba(255, 255, 255, 0.771); text-align: left; padding: 0.4em; border-radius: 0 0 10px 10px;">
                 
-                <img onclick="updateOnOff4()" id="introText" src="images/BADGEon2.PNG"  style="margin: 0.5em;" >
+                <img onclick="updateOnOff4()" id="introText" src="images/BADGEon2.PNG" loading="lazy" style="margin: 0.5em;" alt="badge">
                 <h2 style="color: rgba(0, 0, 0, 0.562); text-align: left; margin:0.6em;"></h2>
                 
 
@@ -38,10 +37,10 @@
             </div>
 
             
-            <h1 class="headings" style="color: rgba(255, 255, 255, 0.936);"><img src="images/upcomingEvents.PNG" width="250px"></h1>
+            <h1 class="headings" style="color: rgba(255, 255, 255, 0.936);"><img src="images/upcomingEvents.PNG" width="250px" loading="lazy" alt="upcoming events"></h1>
            
             <div id="_bodyy">
-            <img src="images/witbankF.PNG" style="width: 250px;">
+            <img src="images/witbankF.PNG" style="width: 250px;" loading="lazy" alt="witbank fresher">
             <h4 style="margin: 0.3em; color: white;" class="headings" id="timerHeading"> COUNTDOWN TIMER</h4>
             <div id="timer" >
                 <h2 id="dateTime" style="margin: 0.3em; font-size: 1.4em;"> 00:00:00</h2>
@@ -60,7 +59,7 @@
             </div>
 
             <div id="_bodyy">
-            <img src="images/annual.PNG" style="width: 250px;">
+            <img src="images/annual.PNG" style="width: 250px;" loading="lazy" alt="annual event">
             <h4 style="margin: 0.3em; color: white;" class="headings" id="timerHeading2"> COUNTDOWN TIMER</h4>
             <div id="timer" >
                 <h2 id="dateTime2" style="margin: 0.3em; font-size: 1.4em;"> 00:00:00</h2>
@@ -110,16 +109,16 @@
             <!--body two-->
              <div id="infoPage">
                 <div id="_bodyy2">
-                    <img src="images/witbankF.PNG" width="200px">
+                    <img data-src="images/witbankF.PNG" width="200px" loading="lazy" alt="witbank fresher">
                     <div id="details" style="background-color: rgba(156, 213, 178, 0); padding: 1em; color: rgb(255, 255, 255); background-image: linear-gradient(rgba(0, 0, 0, 0),black),url(images/background1.jpg); background-attachment: fixed; background-size: contain;" >
-                        <h1 style="text-align: center;margin:0.5em;"><img src="images/headWhite.PNG" width="200px"></h1>
-                        <img alt="ROYAL" src="images/royal.jpeg" width="250px" style="margin: 0;">
-                        <img alt="TSHEGU" src="images/tshegu.jpeg" width="250px" style="margin: 0;">
-                        <img alt="PRIDDY" src="images/priddy.jpeg" width="250px" style="margin: 0;">
+                        <h1 style="text-align: center;margin:0.5em;"><img data-src="images/headWhite.PNG" width="200px" loading="lazy" alt="head"></h1>
+                        <img alt="ROYAL" data-src="images/royal.jpeg" width="250px" style="margin: 0;" loading="lazy">
+                        <img alt="TSHEGU" data-src="images/tshegu.jpeg" width="250px" style="margin: 0;" loading="lazy">
+                        <img alt="PRIDDY" data-src="images/priddy.jpeg" width="250px" style="margin: 0;" loading="lazy">
                         
                     </div>
                     <h2>MAP</h2>
-                    <img id="mapp"src="images/Map.jpeg" style="width: 100%;">
+                    <img id="mapp" data-src="images/Map.jpeg" style="width: 100%;" loading="lazy" alt="map">
                     <h2>MORE INFO</h2>
                     <div id="details2" style="background-color: rgba(156, 213, 178, 0); padding: 1em; color: rgb(255, 255, 255); background-image: linear-gradient(rgba(0, 0, 0, 0),black),url(images/background1.jpg); background-attachment: fixed; background-size: contain;" >
                         <div id="rules">
@@ -207,7 +206,7 @@
             <div id="body3">
             <div class="container">
 
-        <img src="images/BADGEon1.PNG" alt="what type of fresher are you" width="220px">
+    <img data-src="images/BADGEon1.PNG" alt="what type of fresher are you" width="220px" loading="lazy">
         <h2>Upload Image</h2>
 
         <input type="file" id="upload" accept="image/* " placeholder="upload image">
@@ -225,7 +224,7 @@
             <label><input type="radio" name="overlayChoice" value="aurafarmer"> the aura farmer</label>
         </fieldset>
 
-        <canvas id="canvas" width="300px" height="300px"></canvas>
+    <canvas id="canvas" width="300px" height="300px"></canvas>
 
         <br>
 
@@ -251,7 +250,33 @@
             
             
         </body>
-         <script async src="https://www.tiktok.com/embed.js"></script>
-        <script async src="//www.instagram.com/embed.js"></script>
-        <script src="indexScript.js"></script>
+        <!-- Lazy-load heavy embed scripts only when the socials section scrolls into view -->
+        <script>
+        (function(){
+            var loaded = false;
+            function loadEmbeds(){
+                if (loaded) return; loaded = true;
+                var t = document.createElement('script');
+                t.src = 'https://www.tiktok.com/embed.js';
+                t.async = true; document.body.appendChild(t);
+                var i = document.createElement('script');
+                i.src = '//www.instagram.com/embed.js';
+                i.async = true; document.body.appendChild(i);
+            }
+            if ('IntersectionObserver' in window){
+                var obs = new IntersectionObserver(function(entries){
+                    entries.forEach(function(e){ if (e.isIntersecting) { loadEmbeds(); obs.disconnect(); } });
+                });
+                var target = document.getElementById('moreinfo');
+                if (target) obs.observe(target); else loadEmbeds();
+            } else {
+                // fallback
+                window.addEventListener('load', loadEmbeds);
+            }
+        })();
+        </script>
+
+        <!-- load fontawesome deferred to avoid blocking render -->
+        <script defer src="https://kit.fontawesome.com/ba5d6375af.js" crossorigin="anonymous"></script>
+        <script defer src="indexScript.js"></script>
     </html>
